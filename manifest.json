@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Banner Remover",
+  "version": "1.0",
+  "description": "Hides the [censored] event banner",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://uamvirtual.uam.edu.ni/grado/login/index.php"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
